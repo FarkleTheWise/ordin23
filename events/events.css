@@ -104,7 +104,7 @@ body {
 	pointer-events: none;
 	font-family: 'Poppins', sans-serif;
 	position: absolute;
-	left: 80px;
+	left: 50px;
 	bottom: 0px;
 	color: rgba(0,0,0,0.05);
 	font-size: 110px;
@@ -171,7 +171,7 @@ body {
 /* Blaziken */
 
 .flex--blaziken .flex__item--left {
-	background: #f64f37;
+	background: #ea3f24;
 }
 
 .flex--blaziken .flex__item--right {
@@ -201,11 +201,11 @@ body {
 /* Ad */
 
 .flex--ad .flex__item--left {
-	background: #eeb860;
+	background: #e76f51;
 }
 
 .flex--ad .flex__item--right {
-	background: #ffe14d;
+	background: #f4ecc5;
 }
 
 
@@ -214,7 +214,7 @@ body {
 }
 
 .flex--ad1 .flex__item--right {
-	background: #ffe14d;
+	background: #f2a65a;
 }
 
 
