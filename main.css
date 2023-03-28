@@ -43,7 +43,8 @@ html {
 body {
   background-color: var(--white);
   height: 100%;
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 a {
@@ -63,6 +64,88 @@ a {
   color: #fefeff;
   font-family: "Raleway";
   text-align: center;
+}
+
+.section {
+  padding: 75px 20px;
+}
+
+.section-title {
+  font-family: 'Yeseva One', sans-serif;
+  color: #fefeff;
+  font-size: 5rem;
+  margin-top: 8px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.section-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 4rem;
+  padding: 20px 0px;
+  color: #fefeff;
+}
+
+/*UPDATES*/
+.updates {
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 30px;
+  background: #47c5b0;
+}
+
+.updates p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.updates a {
+  color: #111;
+}
+
+.updates a:hover {
+  font-weight: 600;
+}
+
+.updates2 {
+  height: 400px;
+  overflow-x: hidden;
+  background-color: transparent;
+  width: 100%;
+}
+
+.updates .card {
+  justify-content: center;
+  align-content: center;
+  transition: 0.5s;
+  text-align: left;
+  border-radius: 10px;
+  border: transparent;
+  margin: 5px 10px;
+  padding: 17px;
+  background-color: #efefef;
+  line-height: 26px;
+}
+
+.updates .new {
+  -webkit-animation: flicker 0.5s infinite;
+  animation: flicker 0.5s infinite;
+  background-color: #47c5b0;
+  color: #fefeff;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+
+.updates2::-webkit-scrollbar {
+  display: none;
+}
+
+.updates .shadow-insta:hover .shadow-insta:hover {
+  box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
+  transition: 0.3s;
 }
 
 
@@ -290,7 +373,7 @@ a {
 }
 
 .background {
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-10px) scale(3.659);
 }
 
 .clouds {
@@ -307,7 +390,7 @@ a {
 
 .grass {
   transform: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .abt-pyro.hidden {
@@ -367,7 +450,7 @@ a {
   grid-template-columns: 1fr 4fr 3fr 4fr 1fr;
   grid-template-rows: 100%;
   font-family: "Open Sans", sans-serif;
-  background-color: #1a7869;
+  background-color: #1b7969;
   z-index: 1;
 }
 
@@ -452,15 +535,17 @@ a {
 }
 
 .guide p {
-  font-size: 0.9em;
+  font-size: 1.1rem;
   color: var(--light);
   font-family: "Public Sans", sans-serif;
 }
 
 .guide h2 {
+  font-family: "Yeseva One", sans-serif;
+  color: #47c5b0 !important;
   text-align: center;
   padding-top: 30px;
-  font-size: 4em;
+  font-size: 5rem;
   color: var(--three);
   letter-spacing: 4px;
   text-transform: uppercase;
