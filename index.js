@@ -21,7 +21,7 @@ jQuery("#wrapper").on("scroll", function () {
         $(".navb").css("background-color","rgba(0,0,0,0.6)");
         $(".disappear").css("top","0");
     } else {
-        $(".navb").css("background","none");
+        $(".navb").css("background-color","none");
         $(".disappear").css("top","-200");
     }
 });

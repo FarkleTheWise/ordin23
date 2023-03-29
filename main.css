@@ -91,7 +91,7 @@ a {
   width: 100%;
   overflow-x: hidden;
   padding-top: 30px;
-  background: #47c5b0;
+  background: #1b7969;
 }
 
 .updates p {
@@ -100,7 +100,8 @@ a {
 }
 
 .updates a {
-  color: #111;
+  color: #eee;
+  text-shadow: #eee;
 }
 
 .updates a:hover {
@@ -130,7 +131,7 @@ a {
 .updates .new {
   -webkit-animation: flicker 0.5s infinite;
   animation: flicker 0.5s infinite;
-  background-color: #47c5b0;
+  background-color: #1b7969;
   color: #fefeff;
   padding: 5px 10px;
   font-size: 15px;
@@ -434,12 +435,14 @@ a {
   opacity: 1;
   filter: none;
   transform: translate(0);
+  text-align: left;
 }
 
 .abt-pyro.show {
   opacity: 1;
   filter: none;
   transform: translate(0);
+  text-align: right;
 }
 
 /*ABOUT*/
@@ -469,10 +472,11 @@ a {
   font-weight: 500;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
 
 .abt-ordin p {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .abt-ordin:first-child {
@@ -486,6 +490,7 @@ a {
   font-family: "Montserrat", sans-serif;
   padding-top: 80px;
   padding-bottom: 20px;
+  text-align: right;
 }
 
 .abt-pyro {
@@ -499,12 +504,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 90%;
 }
 
 .abt-logos img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
   object-fit: contain;
   margin: 1em;
   display: inline-block;
@@ -520,7 +525,7 @@ a {
 }
 
 .abt-pyro p {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /*GUIDELINES*/
@@ -532,19 +537,20 @@ a {
   display: grid;
   place-items: center;
   min-height: 100%;
+  padding-bottom: 30px;
 }
 
 .guide p {
-  font-size: 1.1rem;
+  font-size: 17px;
   color: var(--light);
   font-family: "Public Sans", sans-serif;
 }
 
 .guide h2 {
   font-family: "Yeseva One", sans-serif;
-  color: #47c5b0 !important;
+  color: #1b7969 !important;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   font-size: 5rem;
   color: var(--three);
   letter-spacing: 4px;
@@ -581,6 +587,17 @@ a {
 .splide__track {
   height: 100%;
 }
+
+.guitar h1{
+  font-family: "Yeseva One", sans-serif;
+  color: #1b7969 !important;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 5rem;
+  color: var(--three);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+ }
 
 .e h2 {
   line-height: -20px;
@@ -675,7 +692,7 @@ a {
 
 /*FOOTER*/
 .footer {
-  background-color: var(--funni);
+  background-color: #1b7969;
   color: var(--white);
   padding-top: 5%;
   padding-bottom: 2%;
@@ -688,7 +705,7 @@ a {
 }
 
 .footer h1 {
-  color: var(--five);
+  color: #eee;
   font-size: 27px;
   text-align: left;
 
@@ -697,7 +714,7 @@ a {
 .footer p {
   padding: 1%;
   font-size: 15px;
-  color: var(--six);
+  color: #eee;
 }
 
 .footer h2 {
