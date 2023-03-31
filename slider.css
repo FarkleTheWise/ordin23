@@ -18,6 +18,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  background: #eef0f2;
 }
 .e h2 {
   font-family: "Poppins";
@@ -65,7 +66,7 @@
     ),
     var(--imglnk);
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
   box-shadow: 0 8px 30px -7px #2a2c30;
   margin: 0 30px;
   padding: 10px 10px;
