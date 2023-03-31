@@ -86,71 +86,6 @@ a {
   color: #fefeff;
 }
 
-/*UPDATES*/
-.updates {
-  width: 100%;
-  overflow-x: hidden;
-  padding-top: 30px;
-  background: #1b7969;
-}
-
-.updates p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.updates a {
-  color: #2a2c30;
-  text-shadow: #eee;
-}
-
-.updates a:hover {
-  font-weight: 600;
-}
-
-.updates2 {
-  height: 400px;
-  overflow-x: hidden;
-  background-color: transparent;
-  width: 100%;
-}
-
-.updates .card {
-  justify-content: center;
-  align-content: center;
-  transition: 0.5s;
-  text-align: left;
-  border-radius: 10px;
-  border: transparent;
-  margin: 5px 10px;
-  padding: 17px;
-  background-color: #efefef;
-  line-height: 26px;
-}
-
-.updates .new {
-  -webkit-animation: flicker 0.5s infinite;
-  animation: flicker 0.5s infinite;
-  background-color: #1b7969;
-  color: #fefeff;
-  padding: 5px 10px;
-  font-size: 15px;
-  border-radius: 15px;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-}
-
-.updates2::-webkit-scrollbar {
-  display: none;
-}
-
-.updates .shadow-insta:hover .shadow-insta:hover {
-  box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
-  transition: 0.3s;
-}
-
-
-
 #loader {
   position: fixed;
   top: 0;
@@ -472,11 +407,10 @@ a {
   font-weight: 500;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
 }
 
 .abt-ordin p {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .abt-ordin:first-child {
@@ -490,7 +424,6 @@ a {
   font-family: "Montserrat", sans-serif;
   padding-top: 80px;
   padding-bottom: 20px;
-  text-align: right;
 }
 
 .abt-pyro {
@@ -504,12 +437,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 100%;
 }
 
 .abt-logos img {
   max-width: 100%;
-  max-height: 90%;
+  max-height: 100%;
   object-fit: contain;
   margin: 1em;
   display: inline-block;
@@ -525,7 +458,7 @@ a {
 }
 
 .abt-pyro p {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /*GUIDELINES*/
@@ -578,6 +511,69 @@ a {
 .guide .box {
   padding: 50px;
   border: 2px #34c8ec solid;
+}
+
+/*UPDATES*/
+.updates {
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 30px;
+  background: #1b7969;
+}
+
+.updates p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.updates a {
+  color: #2a2c30;
+  text-shadow: #eee;
+}
+
+.updates a:hover {
+  font-weight: 600;
+}
+
+.updates2 {
+  height: 400px;
+  overflow-x: hidden;
+  background-color: transparent;
+  width: 100%;
+}
+
+.updates .card {
+  justify-content: center;
+  align-content: center;
+  transition: 0.5s;
+  text-align: left;
+  border-radius: 10px;
+  border: transparent;
+  margin: 5px 10px;
+  padding: 17px;
+  background-color: #efefef;
+  line-height: 26px;
+}
+
+.updates .new {
+  -webkit-animation: flicker 0.5s infinite;
+  animation: flicker 0.5s infinite;
+  background-color: #1b7969;
+  color: #fefeff;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+
+.updates2::-webkit-scrollbar {
+  display: none;
+}
+
+.updates .shadow-insta:hover .shadow-insta:hover {
+  box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.365);
+  transition: 0.3s;
 }
 
 .event-slider {
@@ -737,4 +733,182 @@ a {
 
 .owl-carousel {
   height: 100%;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  /* Adjust grid columns for smaller screens */
+
+  .home h1{
+    font-size: 5em;
+  }
+
+  .guide h2 {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+  
+  .guide p {
+    font-size: 14px;
+  }
+  
+  .guide .box {
+    padding: 20px;
+  }
+
+  .updates {
+    padding-top: 10px;
+  }
+
+  .updates p {
+    font-size: 16px;
+  }
+
+  .updates .card {
+    padding: 12px;
+    line-height: 22px;
+  }
+
+  .updates .new {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .about {
+    grid-template-columns: 1fr 5fr 4fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .abt-ordin {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    padding-block: 40px;
+  }
+
+  .abt-ordin p{
+    text-align: center;
+  }
+
+  .abt-pyro p{
+    text-align: center;
+  }
+
+  .abt-logos {
+    display: none;
+  }
+
+  .abt-pyro {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Adjust font sizes and padding for even smaller screens */
+
+  .section{
+    padding-bottom: 0%;
+  }
+
+  .home h1{
+    font-size: 3em;
+  }
+
+  .guitar h1{
+    font-size: 3em;
+  }
+
+  .section-title{
+    padding-top: 20px;
+    font-size: 3rem;
+  }
+
+  .section-text{
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  
+  .updates2 ol,ul{
+    padding-top: 30px;
+    padding-left: 0rem;
+    padding-bottom: 0px;
+  }
+
+  .updates2{
+    height: 250px;
+  }
+
+  .guide h2 {
+    font-size: 3rem;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  
+  .guide p {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .guide .box {
+    padding: 20px;
+    border-width: 1px;
+  }
+
+  .section-title{
+    font-size: 3em;
+  }
+  
+  .updates p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .abt-ordin h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .abt-ordin p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .abt-pyro h1 {
+    font-size: 50px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .abt-pyro p {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .footer h1 {
+    font-size: 3em;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .footer h2 {
+    font-size: 1.2em;
+  }
+
+  .footer iframe {
+    width: 100%;
+    height: 250px;
+  }
 }
