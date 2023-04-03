@@ -45,15 +45,18 @@ function closeNav () {
 // utkarsh itna cool haina 
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      console.log(entry)
-      if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-      } else {
-          entry.target.classList.remove('show');
-      }
-  });
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i];
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  }
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+for (let i = 0; i < hiddenElements.length; i++) {
+  observer.observe(hiddenElements[i]);
+}
+
